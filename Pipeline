@@ -1,0 +1,25 @@
+// PIPELINE
+A pipeline refers to a way of defining and managing the continuous integration and delivery (CI/CD) processes for software development. A Jenkins pipeline is a set of code that defines the steps, 
+actions, and conditions for building, testing, and deploying applications.
+
+Jenkins pipelines are typically defined using the Jenkinsfile, which is a text file written in Groovy syntax. The Jenkinsfile describes the entire build process, including the stages, steps, and 
+configurations required for building and deploying the software.
+The key components and concepts related to Jenkins pipelines:
+
+1. Stages: A pipeline is divided into stages, which represent different phases or steps in the software delivery process. Each stage typically corresponds to a specific task, such as building, testing,
+or deploying the application.
+
+2.Steps: Steps are the individual actions performed within each stage. Examples of steps include compiling code, running tests, deploying to a server, or sending notifications. Jenkins provides a wide 
+range of built-in steps, and you can also create custom steps using Groovy scripts.
+
+3.Agents: Agents, also known as executors, are the worker nodes that execute the steps of a pipeline. Agents can be Jenkins agents, which are machines managed by Jenkins, or they can be defined as 
+Docker containers, virtual machines, or other remote systems.
+
+4.Declarative and Scripted Syntax: Jenkins pipelines can be defined using either the declarative or scripted syntax. Declarative syntax is recommended for most use cases, as it provides a more 
+structured and concise way to define pipelines. Scripted syntax, on the other hand, offers more flexibility but can be more complex to manage.
+
+5.Pipeline Plugins: Jenkins provides a rich ecosystem of plugins that extend its functionality. Various plugins are available for integrating with source control systems, build tools, testing 
+frameworks, deployment platforms, and more. These plugins can be leveraged within pipeline scripts to automate various tasks.
+
+6.Pipeline Visualization: Jenkins provides a visual representation of pipelines, showing the progress and status of each stage and step. This allows developers and stakeholders to monitor the build 
+process and quickly identify any issues or bottlenecks.
